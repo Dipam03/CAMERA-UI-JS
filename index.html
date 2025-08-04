@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Instagram Camera</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Instagram-like Camera</h1>
+
+  <div class="filters">
+    <button onclick="setFilter('none')" class="active">Normal</button>
+    <button onclick="setFilter('grayscale(100%)')">Grayscale</button>
+    <button onclick="setFilter('sepia(100%)')">Sepia</button>
+    <button onclick="setFilter('contrast(150%)')">Contrast</button>
+    <button onclick="setFilter('brightness(120%)')">Bright</button>
+  </div>
+
+  <video id="video" autoplay playsinline></video>
+  <canvas id="canvas" style="display: none;"></canvas>
+
+  <br>
+  <button onclick="capture()">📸 Capture</button>
+  <button onclick="downloadImage()">💾 Download</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
