@@ -1,0 +1,32 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #111;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+video, canvas {
+  margin: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px #333;
+}
+
+.filters {
+  margin-bottom: 10px;
+}
+
+.filters button {
+  margin: 0 5px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 10px;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+}
+
+.filters button.active {
+  background-color: #ff4081;
+}
